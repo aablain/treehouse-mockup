@@ -1,0 +1,25 @@
+// Colors
+
+$color-java       : rgb(44, 150, 118);
+$color-python     : rgb(240, 146, 176);
+$color-wordpress  : rgb(131, 140, 199);
+$color-white      : #fff;
+$color-red        : #F1948A;
+$color-grey       : rgb(223, 225, 226);
+$color-dark-grey  : darken($color-grey, 20%);
+$color-grey-base  : rgb(237, 239, 240);
+$color-shadow     : rgb(210, 210, 210);
+$color-hr         : rgb(200, 200, 200);
+$color-astral     : #3079AB;
+$color-bay        : #255A7D;
+
+
+// Media Break points
+
+$brk-narrow   : '(max-width: 675px)';
+$brk-wide     : '(max-width: 1330px)';
+
+//radius
+$bdr-radius   : 3px;
+
+$img-path     : "../img/"

@@ -1,0 +1,28 @@
+.colorjava {
+  color: $color-java;
+  &:hover {
+    color: $color-white;
+    background-color: $color-java;
+  }
+}
+.colorpython {
+  color: $color-python;
+  &:hover {
+    color: $color-white;
+    background-color: $color-python;
+  }
+}
+.colorWordpress {
+  color: $color-wordpress;
+  &:hover {
+    color: $color-white;
+    background-color: $color-wordpress;
+  }
+}
+.inverted {
+    filter: invert(100%);
+}
+.partialinvert {
+  filter: invert(100%);
+  opacity: 0.3;
+}

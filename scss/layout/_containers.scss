@@ -1,0 +1,130 @@
+.boxes {
+  @extend %floatLeft;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px 10px 10px 0px;
+  width: 600px;
+  overflow: hidden;
+  @media #{$brk-wide}{
+      clear: both;
+      float: none !important;
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+  @media #{$brk-narrow}{
+    clear: both;
+    float: none !important;
+    width: 100%;
+    min-width: 400px;
+  }
+}
+
+.javahead {
+  background-color: $color-java;
+}
+.pythonhead {
+  background-color: $color-python;
+}
+.wordpresshead {
+  background-color: $color-wordpress;
+}
+.rightly {
+  float: right;
+}
+.leftly {
+  @extend %floatLeft;
+}
+
+.boxes h6:nth-of-type(2):hover {
+  font-style: italic;
+}
+
+.boxes h6:nth-of-type(2):active {
+  color: $color-white;
+  background-color: $color-red;
+  content: "";
+}
+
+.boxes h6:nth-of-type(1):active {
+  font-style: italic;
+}
+
+.boxBottom {
+  padding-top: 10px;
+}
+.border {
+  border-radius: 100%;
+  border: 3px solid $color-grey;
+  padding: 7px;
+}
+.java {
+  @extend %floatLeft;
+  border-bottom: 1px solid $color-grey;
+  border-radius: 3px;
+  /*box-shadow: 1px 1px 5px black;*/
+
+}
+.libHead {
+  @extend %floatLeft;
+}
+.col-{
+  &left, &right{
+    @extend %padding;
+  }
+}
+
+.col-left {
+  width: 65%;
+  float: left;
+}
+
+.col-right {
+  width: 35%;
+  float: left;
+  img {
+    float: right;
+    margin-right: 30px;
+  }
+  p span {
+    color: $color-astral;
+  }
+  h4 {
+    border: $color-astral 2px solid;
+    padding: 8px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+}
+.box-big-header{
+  img{
+      margin-top: 15px;
+  }
+  p{
+    margin-top: 25px;
+    padding-right: 15px;
+    color: $color-white;
+  }
+}
+.course-section{
+  width: 100%;
+}
+.course-section-description p{
+  margin-top: -15px;
+}
+
+.first {
+  .leftly {
+    width: 10%;
+  }
+  .rightly {
+    width: 90%;
+  }
+}
+
+.box-wrapper {
+  overflow: hidden;
+  background-color: $color-white;
+}

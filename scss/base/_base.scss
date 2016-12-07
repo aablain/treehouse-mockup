@@ -1,0 +1,70 @@
+*:not(body),
+*:not(html) {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-grey-base;
+  padding: 25px;
+  max-width: 1300px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  color: $color-hr;
+  box-shadow: 0px 2px 3px $color-shadow;
+}
+
+hr {
+  clear: left;
+  margin-bottom: 20px;
+}
+.course, .course-section .course-section-icon{
+  hr{
+    box-shadow: none;
+    border-color: $color-grey-base;
+  }
+}
+h6 {
+  border-radius: 10px;
+  border: 2px solid $color-grey-base;
+  text-align: center;
+  width: 25%;
+  font-size: 22px;
+  margin: 0;
+}
+.course-section-icon{
+  width: 10%;
+  float: left;
+}
+.course-section-description{
+  width: 90%;
+}
+.number-members{
+  font-size: 32px;
+}
+
+.dark-grey-text{
+  color: $color-dark-grey;
+}
+
+.box-big{
+  border-radius: $bdr-radius;
+  height: 500px;
+  background-color: $color-bay;
+  text-align: center;
+  > img {
+    margin-top: 100px;
+  }
+}
+
+.box-big-header{
+  border-radius: $bdr-radius $bdr-radius 0 0;
+  background-color: $color-astral;
+  object-fit: cover;
+  height: 70px;
+  img {
+    text-align: left;
+  }
+}
